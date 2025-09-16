@@ -210,7 +210,6 @@
         1985 Bar Coctelería</span></h1>
       <p class="hero__subtitle">Cócteles premium y eventos únicos en Las Parejas, Santa Fe.</p>
       <div class="hero__cta">
-        <a href="#reservas" class="btn btn--gold" aria-label="Reservar una mesa ahora">Reservar</a>
         <a href="#menu" class="btn btn--outline" aria-label="Ver la carta del bar">Carta</a>
       </div>
     </div>
@@ -258,7 +257,6 @@
       </div>
       <br>
       <div class="center mt-24">
-        <a href="#reservas" class="btn btn--gold" role="button" aria-label="Reservar una mesa para un evento">Reservar Mesa</a>
       </div>
     </div>
   </section>
@@ -293,55 +291,6 @@
     </div>
   </section>
 
-  <!-- Reservas -->
-  <section class="section section--alt" id="reservas" aria-labelledby="reservas-title">
-    <div class="container grid-2">
-      <div class="reveal">
-        <h2 class="section__title" id="reservas-title">Reservas</h2>
-        <p>Reserva tu mesa para una noche especial.</p>
-        <form id="reservaForm" class="form" aria-label="Formulario de reservas">
-          <div class="form__row">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required aria-required="true" aria-describedby="nombre-error">
-            <span id="nombre-error" class="error-message" hidden>Por favor, introduce tu nombre.</span>
-          </div>
-          <div class="form__row">
-            <label for="telefono">Teléfono</label>
-            <input id="telefono" name="telefono" type="tel" placeholder="Ej: +543471123456" pattern="\+?[0-9]{10,15}" required aria-required="true" aria-describedby="telefono-error">
-            <span id="telefono-error" class="error-message" hidden>Por favor, introduce un número de teléfono válido.</span>
-          </div>
-          <div class="form__row">
-            <label for="fecha">Fecha</label>
-            <input id="fecha" name="fecha" type="date" min="2025-09-10" required aria-required="true" aria-describedby="fecha-error">
-            <span id="fecha-error" class="error-message" hidden>Por favor, selecciona una fecha válida.</span>
-          </div>
-          <div class="form__row">
-            <label for="hora">Hora</label>
-            <input id="hora" name="hora" type="time" min="12:00" max="23:00" required aria-required="true" aria-describedby="hora-error">
-            <span id="hora-error" class="error-message" hidden>Por favor, selecciona una hora válida.</span>
-          </div>
-          <div class="form__row">
-            <label for="tipo">Tipo de reserva</label>
-            <select id="tipo" name="tipo" aria-label="Tipo de reserva" title="Tipo de reserva">
-              <option value="Cena">Cena</option>
-              <option value="Cumpleaños">Cumpleaños</option>
-              <option value="Evento">Evento</option>
-            </select>
-          </div>
-          <div class="form__row">
-            <label for="personas">Personas</label>
-            <input id="personas" name="personas" type="number" min="1" max="20" value="2" required aria-required="true" aria-describedby="personas-error">
-            <span id="personas-error" class="error-message" hidden>Por favor, selecciona entre 1 y 20 personas.</span>
-          </div>
-          <button class="btn btn--gold" type="submit" aria-label="Enviar reserva">Reservar</button>
-          <p id="form-message" class="form-message" hidden></p>
-        </form>
-      </div>
-      <div class="reveal reservas__image">
-        <!-- Aquí puedes agregar una imagen si es necesario -->
-      </div>
-    </div>
-  </section>
 
   <!-- Footer / Contacto -->
   <footer class="footer" id="contacto" aria-labelledby="contacto-title">
